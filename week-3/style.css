@@ -1,0 +1,306 @@
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif ;
+    margin: 0;
+  }
+  
+  @font-face {
+    font-family: myFirstFont;
+    src: url(Agbalumo-Regular.woff);
+  }
+
+  header > p{
+    font-family: myFirstFont;
+  }
+
+  section {
+    margin: 0 2px;
+  }
+  
+  section.full-screen {
+    margin: 0;
+  }
+
+/* try hamburger menu using javascript (still testing)
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  } */
+  
+  nav {
+    position: static;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 0px solid black;
+  }
+  
+  nav > ul {
+    margin-left: auto;
+    margin-right: 18px;
+  }
+  
+  nav > ul > li {
+    display: inline-block;
+  }
+  
+  span > img {
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+  }
+  
+  span {
+    display: flex;
+    align-items: center;
+  }
+  
+  header {
+    text-align: center;
+    color: black;
+    background-color:black;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    background-image: url(./assets/lang2.jpg);
+    background-position: center;
+    background-size: contain;
+    
+    
+  }
+  
+  .relative-container {
+    position: fixed;
+  }
+  
+  header h1 {
+    margin: 25px;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px red;
+    transition-duration: 10s;
+    transition-delay: 2s;
+  }
+
+  header h1 :hover{
+    font-size: 36px;
+  }
+  
+  header p {
+    margin: 0;
+    color: whitesmoke;
+    font-size: 25px;
+    text-shadow: 2px 2px 8px red;
+    
+  }
+
+  
+  img {
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+
+  #Our-Courses .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    grid-auto-rows: 240px 240px 240px;
+  }
+
+  .our-available-courses{
+    
+    @keyframes mymove {
+      50% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%)
+
+      }
+      
+    }
+    /*filter: grayscale(100%);
+    cursor: pointer;*/
+
+  
+  }
+
+  div{
+    display: block;
+  }
+
+  #Our-Courses .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+  }
+
+  .grid-container #item-1 {
+    grid-column: 1/2 span;
+    grid-row: 1;
+  }
+
+  #section-video .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*#why-choose-us .flex-container figure{
+    text-align: center;
+  }
+
+  #why-choose-us .flex-container img{
+    height: 240px;
+    width: auto;
+  }*/
+
+  ul.a {list-style-type: circle;}
+
+  header h1 {
+    /* animation properties */
+    animation-name: my-animation;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    /* other properties */
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto; 
+  
+  }
+  
+  @keyframes my-animation {
+    from {
+      background-color: transparent;
+      width: 300px;
+      top: 100px;
+    }
+    to {
+      background-color: transparent;
+      width: 50px;
+      top: 30px;
+    }
+  }
+  
+  
+  fieldset {
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  
+  textarea {
+    width: 100%;
+    padding: 4px 4px;
+    margin: 8px 0;
+    display: block;
+  }
+  
+  #form-section {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    margin-top: 20px;
+  }
+  
+  #form-section form {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button[type="submit"] {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* for tablet and desktop */
+
+  @media only screen and (min-width: 768px) {
+    #why-choose-us > .flex-container {
+      display: flex;
+      align-items: center;
+    }
+  
+    #why-choose-us > .flex-container figure {
+      margin-left: auto;
+    }
+  
+    #why-choose-us > .flex-container figure img {
+      height: 400px;
+    }
+  
+    #why-choose-us > .flex-container figcaption {
+      text-align: center;
+      margin-top: 16px;
+    }
+  
+    #why-choose-us > .flex-container.row-reverse {
+      flex-direction: row-reverse;
+    }
+  
+    #why-choose-us > .flex-container.row-reverse p {
+      margin-left: 32px;
+    }
+  
+    #why-choose-us > .flex-container.row-reverse figure {
+      margin-left: 40px;
+      min-width: 320px;
+    }
+  
+    iframe {
+      max-width: 480px;
+    }
+  
+    #our-available-courses .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 16px;
+      grid-auto-rows: 320px 320px;
+    }
+  
+    #our-available-courses .grid-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .grid-container #item-1 {
+      grid-column: 1;
+      grid-row: 1 / 2 span;
+    }
+  
+    .grid-container #item-2 {
+      grid-row: 1;
+      grid-column: 2 / 3 span;
+    }
+  }
