@@ -91,4 +91,6 @@ Layout: https://wonderful-sprite-177a55.netlify.app/
 
 ![Myimage](./assets2/4.7%20Redirect%20to%20website.JPG)
 
+9. Please ensure link is updated with your domain
+![Myimage](./assets2/4.8%20Link%20is%20updated.JPG)
 Thank you
