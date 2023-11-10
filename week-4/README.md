@@ -3,6 +3,8 @@ This is **README** file
 # My Landing Website - My Course
 Layout: https://wonderful-sprite-177a55.netlify.app/
 
+Layout: https://aldazw.tech/
+
 ## **Task**
 1. Deploy a website about things that you built and deployed on Netlify
 2. The deployment must be auto deploy from your project's main branch using github Action
@@ -12,6 +14,7 @@ Layout: https://wonderful-sprite-177a55.netlify.app/
 - Netlify sign up process and connect netlify to your github project
 - Auto deployment on Github with Netlify
 - How to connect your custom domain and DNS
+- Create pull request from another branch
 
 ## **Screenshot**
 **A. Netlify sign up process** 
@@ -90,5 +93,26 @@ Layout: https://wonderful-sprite-177a55.netlify.app/
 8. You will be redirected to your website.
 
 ![Myimage](./assets2/4.7%20Redirect%20to%20website.JPG)
+
+**D. Create pull request from another branch**
+
+1. Create new branch for example. In this example, I create a new branch called Second by coding from the terminal
+
+![Myimage](./assets2/5.1%20Create%20another%20branch.JPG)
+
+2. Check your current branch now
+
+![Myimage](./assets2/5.2%20Ensure%20branch%20status.JPG)
+
+3. Make respective changes. In this example, I edit my readme file by adding some new steps and images.
+
+4. Git push origin to branch name
+![Myimage](./assets2/5.3%20Git%20push%20to%20that%20branch.JPG)
+
+5. Once youre done, there will be notification in github to pull request. Ensure the second branch data will be moved to main branch.
+
+6. Confirmed changed
+
+![Myimage](./assets2/5.7%20Confirmed%20merge.JPG)
 
 Thank you
