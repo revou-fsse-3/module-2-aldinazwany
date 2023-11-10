@@ -94,6 +94,7 @@ Layout: https://aldazw.tech/
 
 ![Myimage](./assets2/4.7%20Redirect%20to%20website.JPG)
 
+<<<<<<< HEAD
 **D. Create pull request from another branch**
 
 1. Create new branch for example. In this example, I create a new branch called Second by coding from the terminal
@@ -115,4 +116,8 @@ Layout: https://aldazw.tech/
 
 ![Myimage](./assets2/5.7%20Confirmed%20merge.JPG)
 
+=======
+9. Please ensure link is updated with your domain
+![Myimage](./assets2/4.8%20Link%20is%20updated.JPG)
+>>>>>>> 70bae2c44336480f88f48140918d2f86422d516f
 Thank you
