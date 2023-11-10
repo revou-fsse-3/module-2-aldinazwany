@@ -14,7 +14,7 @@ Layout: https://wonderful-sprite-177a55.netlify.app/
 - How to connect your custom domain and DNS
 
 ## **Screenshot**
-**a. Netlify sign up process** 
+**A. Netlify sign up process** 
 1. Access netlify website (app.netlify.com) and select sign up with email or sign up with Github if you already have the account
 
 
@@ -24,14 +24,14 @@ Layout: https://wonderful-sprite-177a55.netlify.app/
 
 ![Myimage](./assets2/1.2%20Sign%20up%20using%20email.JPG)
 
-b. Connect netlify to your github project and auto deployment on Github with Netlify
+**B. Connect netlify to your github project and auto deployment on Github with Netlify**
 
 1. After you login, choose add new site and select 'import an existing project
 '
 ![Myimage](./assets2/2.1%20Import%20project.JPG)
 
 
-**2. Select deploy with Github**
+2. Select deploy with Github
 
 ![Myimage](./assets2/2.2%20Deploy%20with%20Github.JPG)
 
@@ -57,3 +57,38 @@ b. Connect netlify to your github project and auto deployment on Github with Net
 7. Deploying Succeed
 
 ![Myimage](./assets2/2.4.5%20Deployed%20success.JPG)
+
+
+**C. How to connect your custom domain and DNS**
+
+1. Make sure you already buy external domain. In this example, I already bought domain from niagahoster. Please ensure it is already active.
+
+![Myimage](./assets2/3.1%20Niagahoster%20active.JPG)
+
+![Myimage](./assets2/3.2%20Niagahoster%20status.JPG)
+
+2. On netlify website, please select desired project in 'sites' menu
+
+![Myimage](./assets2/4.1%20Go%20to%20site%20configuration.JPG)
+
+3. Go to domain management section and click add domain alias. Copy your domain in niagahoster (i.e Aldin.tech) then click verify --> adding domain. Below screenshot is the process after clicking these steps. 
+
+4. To use Netlify DNS, go to your domain registrar and change your domain’s name servers to the following custom hostnames assigned to your DNS zone.
+
+![Myimage](./assets2/4.4%20Domain%20DNS.JPG)
+
+5. On domain's name servers (in this case is Niagahoster), please go to DNS/Namaservers sections and copy all custom hostnames assigned to DNS zone in the Netlify. 
+
+![Myimage](./assets2/4.5%20Change%20Nameserver%20in%20niagahoster.JPG)
+
+6. All process are done. This domain is waiting for external DNS propagation that can take up to 24 hours).
+
+7. Once done, you can go to your custom link by clicking 'site overview' and select your projects and select your domain's link.
+
+![Myimage](./assets2/4.6%20Go%20to%20your%20custom%20link.JPG)
+
+8. You will be redirected to your website.
+
+![Myimage](./assets2/4.7%20Redirect%20to%20website.JPG)
+
+Thank you
